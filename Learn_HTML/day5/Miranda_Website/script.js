@@ -15,12 +15,12 @@ var t1=gsap.timeline({
 t1.to("#pageone",{
     y:"100vh",
     duration:0,
-    scale:0.6,
+    scale:0.3,
   
 })
 
 t1.to("#pageone",{
-    y:"-40vh",
+    y:"-90vh",
     duration:1,
     delay:1,
 
