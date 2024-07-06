@@ -1,27 +1,25 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:"Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     background-color: #0a0a0a;
 }
 
-.container{
+.container {
     position: absolute;
     transform: translate(-50%, -50%); 
-    left:50%;
+    left: 50%;
     top: 50%;
     height: 14.37em;
     width: 28.12em;
     cursor: pointer;
-
-
 }
 
-h1{
+h1 {
     background-color: #0a0a0a;
     color: #fff;
     text-align: center;
@@ -29,23 +27,32 @@ h1{
     position: absolute;
 }
 
-p{
-    color: #ff3c78;
+.socials {
     width: 100%;
-    font-size:3.5em;
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
     text-align: center;
-   
 }
-.container:hover h1:nth-child(2){
-    clip-path:polygon(0 0,100% 0,100% 50%,0 50%);
+
+.socials a {
+    margin: 0 10px;
+}
+
+.socials img {
+    width: 50px;
+    height: 50px;
+}
+
+/* We are clipping the below path */
+.container:hover h1:nth-child(2) {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
     transform: translateY(-30px);
     transition: 0.4s;
 }
-.container:hover h1:nth-child(3){
-    clip-path:polygon(0 50%,100% 50%,100% 100%,0 100%);
+
+.container:hover h1:nth-child(3) {
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
     transform: translateY(30px);
     transition: 0.4s;
 }

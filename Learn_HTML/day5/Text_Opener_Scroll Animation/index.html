@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang='en' data-theme="light">
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <link rel="stylesheet" href="style.css">
+    <title>Text Opener Scroll Animation</title>
+</head>
+<body>
+        <!-- <div id="top">
+            <h1 id="top-h" class="main-h1">WELCOME</h1>
+        </div>
+        <div id="bottom">
+            <h1 id="bottom-h" class="main-h1">WELCOME</h1>
+        </div> -->
+    <div id="main">
+        <div id="center">
+            <header id="head">
+                <h1 id="next " class="poppins-black">NEXT</h1>
+                <button type="button" data-theme-toggle aria-label="Change to dark theme">Change to dark theme</button>
+            </header>
+            <div id="sec">
+
+                <!-- Minute Bar -->
+            <div class="progress-item"semi>
+                <div class="progress-label">
+                    
+                    <div class="icon poppins-bold">⏰Next Minute</div>
+                    <div class="time-left desktop-only poppins-bold" id="time-minute1">Calculating
+                    
+                    </div>
+                </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" id="progress-minute"> </div>
+                    </div>
+                    <div class="time-left mobile-only poppins-bold " id="time-minute2"> Calculating</div>
+            </div>
+
+                    <!-- Progress Bar for hour -->
+            <div class="progress-item">
+
+                    <div class="progress-label">
+
+                        <div class="icon poppins-semibold">⏱️Next Hour</div>
+                        <div class="time-left desktop-only poppins-semibold"
+                        id="time-hour1">Calculating</div>
+                        
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div class="progress" id="progress-hour">
+
+                        </div>
+                    </div>
+                    <div class="time-left mobile-only poppins-semibold" id="time-hour2"> Calculating</div>
+            </div>
+
+                <!-- Progress Bar Next Day -->
+            <div class="progress-item">
+
+                    <div class="progress-label">
+
+                        <div class="icon poppins-semibold">🌅Next Day</div>
+                        <div class="time-left desktop-only poppins-semibold"
+                        id="time-day1">Calculating</div>
+                        
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div class="progress" id="progress-day">
+
+                        </div>
+                    </div>
+                    <div class="time-left mobile-only poppins-semibold" id="time-day2"> Calculating</div>
+            </div>
+                <!-- Progress Bar Next Month -->
+            <div class="progress-item">
+
+                    <div class="progress-label">
+
+                        <div class="icon poppins-semibold">🗓️Next Month</div>
+                        <div class="time-left desktop-only poppins-semibold"
+                        id="time-month1">Calculating</div>
+                        
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div class="progress" id="progress-month">
+
+                        </div>
+                    </div>
+                    <div class="time-left mobile-only poppins-semibold" id="time-month2"> Calculating</div>
+            </div>
+                <!-- Progress Bar Next Year -->
+            <div class="progress-item">
+
+                    <div class="progress-label">
+
+                        <div class="icon poppins-semibold">🎆Next Year</div>
+                        <div class="time-left desktop-only poppins-semibold"
+                        id="time-year1">Calculating</div>
+                        
+                    </div>
+
+                    <div class="progress-bar">
+
+                        <div class="progress" id="progress-year">
+
+                        </div>
+                    </div>
+                    <div class="time-left mobile-only poppins-semibold" id="time-year2"> Calculating</div>
+            </div>
+                <!-- Progress Bar Next Valentine's Day -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🌹Next Valentine's Day</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-valentine1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-valentine">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-valentine2"> Calculating</div>
+                </div>
+                <!-- Progress Bar Next mother -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🤱Next Mother's Day</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-mother1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-mother">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-mother2"> Calculating</div>
+                </div>
+                <!-- Progress Bar Next father -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">👨‍🍼Next Father's Day</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-father1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-father">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-father2"> Calculating</div>
+                </div>
+                <!-- Progress Bar Next christmas -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🎄Next Christmas</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-christmas1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-christmas">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-christmas2"> Calculating</div>
+                </div>
+                <!-- Progress Bar 🌑 Next New Moon-->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🌑Next New Moon</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-new-moon1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-new-moon">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-new-moon2"> Calculating</div>
+                </div>
+                <!-- Progress Bar 🌒 Next Waxing Crescent -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🌒Next Waxing Crescent</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-crescent1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-crescent">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-crescent2"> Calculating</div>
+                </div>
+                <!-- Progress Bar Next Quarter Moon -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🌓Next Quarter Moon</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-quarter1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-quarter">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-quarter2"> Calculating</div>
+                </div>
+                <!-- Progress Bar 🌔 Next Waxing Gibbous -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🌔Next Waxing Gibbous</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-waxing-gibbous1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-waxing-gibbous">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-waxing-gibbous2"> Calculating</div>
+                </div>
+                <!-- Progress Bar 🌕 Next Full Moon -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🌕Next Full Moon</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-full-moon1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-valentine"></div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-full-moon2"> Calculating</div>
+                </div>
+                <!-- Progress Bar 🌖 Next Waning Gibbous -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🌖Next Waning Gibbous</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-waning-gibbous1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-waning-gibbous">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-waning-gibbous2"> Calculating</div>
+                </div>
+                <!-- Progress Bar 🌗 Next Last Quarter Moon -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🌗Next Last Quarter Moon</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-last-quarter1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-last-quarter">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-last-quarter2"> Calculating</div>
+                </div>
+                <!-- Progress Bar 🌘 Next Waning Crescent -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🌘Next Waning Crescent</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-waning-crescent1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-waning-crescent">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-waning-crescent2"> Calculating</div>
+                </div>
+               
+                <!-- Progress Bar 🔟Next decade -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🔟Next decade</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-decade1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-decade">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-decade2"> Calculating</div>
+                </div>
+                <!-- Progress Bar 💯Next century -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">💯Next century</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-century1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-century">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-century2"> Calculating</div>
+                </div>
+                <!-- Progress Bar 📅 Next millennium -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">📅Next millennium</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-millennium1">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-millennium">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-millennium2"> Calculating</div>
+                </div>
+                <!-- Progress Bar My birthday -->
+                <div class="progress-item">
+
+                        <div class="progress-label">
+
+                            <div class="icon poppins-semibold">🎱My Birthday</div>
+                            <div class="time-left desktop-only poppins-semibold"
+                            id="time-decade">Calculating</div>
+                            
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress" id="progress-decade">
+
+                            </div>
+                        </div>
+                        <div class="time-left mobile-only poppins-semibold" id="time-decade  "> Calculating</div>
+                </div>
+
+        </div>
+    </div>
+        
+
+
+    <script src="https://cdn.jsdelivr.net/npm/lunarphase-js@1.0.2/lunarphase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

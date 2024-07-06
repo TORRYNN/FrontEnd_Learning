@@ -1,0 +1,335 @@
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+:root {
+    --grid-unit: 1rem;
+    --border-radius-base: 0.5rem;
+}
+
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+}
+
+[data-theme="dark"] {
+    --color-bg: #000000;
+    --color-fg: #ffffff;
+}
+
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: font-color .5s ease-in-out;
+    transition: background .5s ease-out;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: monospace;
+}
+
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    
+    overflow: hidden;
+}
+
+#top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color:  var(--color-fg);
+    overflow: hidden;
+    z-index: 100;
+     
+}
+
+#center {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transform-origin: center;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    
+    
+
+}
+
+#bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color:  var(--color-fg);
+    overflow: hidden;
+    z-index: 100;
+    
+}
+
+.main-h1 {
+    font-size: 20vw;
+    line-height: 50vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-bg);
+}
+
+#top-h {
+    bottom: 50%;
+}
+
+#bottom-h {
+    top: 0% !important;
+}
+
+#head {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--color-bg);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+
+
+#next h1 {
+    color:var(--color-bg);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+#sec{
+    width: 100%;
+    
+    max-height: 100vh;
+    background-color: green;
+    z-index: 10;
+    margin-top:10vh;
+    padding: 1.5rem 1.5rem;
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 1rem;
+    overflow:scroll;
+   
+}
+/* ----------------------------------------------- */
+
+
+/* Progress-item main class */
+.progress-item{
+    margin-bottom:35px
+
+}
+
+/* Progress label class */
+.progress-label{
+    
+    overflow:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    margin-bottom:10px;
+    
+}
+
+
+/* Icon class  */
+.icon{
+    
+   
+   font-size:26px
+}
+
+.time-left{
+    font-size:20px;
+    margin-top:10px;
+    justify-self: end;
+    float:right;
+}
+
+
+
+.mobile-only,.time-left-mobile{
+
+    display:none
+}
+
+.progress-bar{
+    background-color:#f1f2f6;
+    height:45px;
+    border-radius:5px;
+    margin:0 auto;
+    overflow:hidden
+    
+}
+
+.progress{
+
+	background-color:#2ecc71;
+    transition:width .3s ;
+    
+    
+    
+    
+    height:45px
+	
+}
+
+
+
+
+@media only screen and (max-width:600px){
+    
+.progress-bars{
+    padding:30px 15px
+}
+
+.progress-item{margin-bottom:45px}
+
+.progress-label{
+    grid-template-columns:repeat(1,1fr);margin-bottom:5px
+}
+
+.progress-icon{
+    font-size:20px
+}
+
+.time-left{
+    font-size:16px;
+    margin-top:5px;
+    
+    float:right
+}
+
+.mobile-only{display:block}
+
+.desktop-only{display:none}
+
+}
