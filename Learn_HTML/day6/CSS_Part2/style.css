@@ -1,0 +1,71 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1{
+    color:#b92b27; 
+}
+
+h3{
+    color:purple;
+}
+
+#login{
+    background-color:white;
+    
+
+}
+#signup{
+    background-color:#b92b27; 
+    color: white;
+
+}
+
+.upvote{
+    background-color:rgb(21, 255, 21);
+    color:aliceblue;
+    font-weight: 900;
+    font-size: 16px;
+}
+.answer{
+    background-color:rgb(255, 21, 21);
+    color:aliceblue;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+p a{
+    font-size:16px;
+    color: rgb(0, 183, 255);
+    background-color: black;
+    padding: 4px 4px;
+    border-radius: 20px;
+}
+
+
+p+h3{
+    text-decoration: underline;
+}
+
+input[type="text"]{
+    color: green;
+    font-size :16px;
+}
+
+input[type="password"]{
+    color: red;
+    font-size :16px;
+}
+
+button:active{
+    background-color:greenyellow;
+    color:green
+}
+/* button:hover{
+    background-color:orange;
+} */
+
+p:active{
+    font-weight: bold;
+    color: green;
+}
