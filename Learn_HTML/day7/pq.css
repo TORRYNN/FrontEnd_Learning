@@ -1,0 +1,26 @@
+#set{
+    height:150px;
+    width: 300px;
+    background-color: gray; 
+    border: 2px solid black;
+    border-style: dotted;
+    margin:20px 2em 1em 40px;
+    padding:1em;
+}
+
+.qs2{
+    height: 100px;
+    width: 100px;
+    background-color:pink;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+ul{
+    list-style: circle inside;
+}
+li{
+    display: inline-block;
+}
+
