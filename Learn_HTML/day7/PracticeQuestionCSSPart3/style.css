@@ -1,0 +1,78 @@
+#main{
+    
+    width: 100px;
+    height: 40vh;
+    background-color: grey;
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    
+    
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#circle1{
+    background-color:red
+}
+#circle2{
+    background-color: yellow  ;
+}
+#circle3{
+    background-color: green;
+}
+
+#leg{
+    width: 35px;
+    height: 50vh;
+    background-color: rgb(89, 89, 89);
+    position:absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid black;
+    z-index: -1;
+    
+}
+
+.triangle{
+    width: 180px;
+    height: 60px;
+    
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    clip-path: polygon(20% 1%, 80% 1%, 100% 100%, 1% 100%);
+    border: 2px solid black;
+}
+
+#triangle1{
+    background-color:rgb(89, 89, 89);
+    z-index:-1;
+}
+#triangle2{
+    background-color:rgb(89, 89, 89);
+    z-index:-1;
+    top: 33%;
+    width: 175px;
+}
+#triangle3{
+    background-color:rgb(89, 89, 89);
+    z-index:-1;
+    top: 45%;
+    width: 165px;
+
+}
