@@ -1,0 +1,27 @@
+*{
+   box-sizing : border-box;
+}
+
+#page1{
+    width: 100%;
+    height: 100vh;
+}
+
+#crc{
+    width: 100vh;
+    height: 100vh;
+    background-color: lightblue;
+    border-radius:100%;
+    transition: 1s ;
+    position: absolute;
+    top:80%;
+}
+
+/* We will be using scroll trigger instead of hover */
+#crc:hover{
+     width: 100%;
+    height: 100vh;
+    background-color: rgb(94, 215, 255);
+    border-radius: 0;
+    top:0;
+}
