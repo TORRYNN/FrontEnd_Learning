@@ -1,0 +1,24 @@
+#container{
+    height:300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    gap: 4px;
+    
+    
+    justify-content: space-between;
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    height:100px;
+    width: 100px;
+    color:white;
+    text-align: center;
+    font: size 1.53m;
+}
