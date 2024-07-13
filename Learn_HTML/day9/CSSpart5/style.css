@@ -6,9 +6,10 @@
     border: 2px solid black;
     display: flex;
     gap: 4px;
-    
-    
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    align-content: space-around;
 }
 
 h1{
@@ -17,7 +18,7 @@ h1{
 
 #container div{
     height:100px;
-    width: 100px;
+    width: 300px;
     color:white;
     text-align: center;
     font: size 1.53m;
