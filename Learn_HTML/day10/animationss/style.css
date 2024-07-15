@@ -4,7 +4,7 @@
     background-color: red;
     margin: auto;
     border-radius: 50%;
-    animation: circle 1s ease-in-out  forwards;
+    /* animation: circle 1s ease-in-out  forwards; */
     
 }
 @keyframes circle {
@@ -16,5 +16,26 @@
         height: 100vh;
         border-radius: 0;
         background-color: magenta;
+    }
+}
+
+/* Media Querries */
+/* Help us create responsive websites */
+
+@media  (width<700px) {
+    #crc{
+        background-color: green;
+    }
+}
+/* For screen size this and above */
+@media (min-width: 768px) {
+    #crc{
+        background-color: pink;
+    }
+}
+
+@media (max-width:400){
+    #crc{
+        background-color: purple;
     }
 }
