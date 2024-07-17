@@ -27,6 +27,8 @@
     border: 2px solid black;
     text-align: center;
     font-size:25px;
+    /* Z-index specifies the stack order of an element. */
+    z-index: 99;
 }
 
 #one{
