@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+    font-weight: 400;
+
+}
+
+.main_box{
+    background:url("photo.jpg");
+    height: 100vh;
+}
+
+.btn_one i{
+    color: rgb(254, 254, 254);
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 20px;
+    line-height: 60px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.sidebar_menu{
+    position:fixed;
+    left:-300px;
+    height: 100vh;
+    background-color: #3e3e3e54;
+    width: 250px;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius:20px ;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+}
+
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 50px;
+    box-shadow: 0 0 4px rgba(255,255,255,0.5);
+    
+}
+
+.sidebar_menu .logo a{
+    position:absolute;
+    left: 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.sidebar_menu .menu{
+    position:absolute;
+    width: 100%;
+    top:60px;
+}
+
+.sidebar_menu .btn_two i{
+    color:red;
+    font-size: 30px;
+    line-height: 60px;
+    position: absolute;
+    right: 10px;
+    /* opacity: 0; */
+    cursor: pointer;
+}
+
+.sidebar_menu .menu li{
+    margin-top:6px;
+    padding: 14px 20px;
+
+}
+
+.sidebar_menu .menu i,a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+
+}
+
+.sidebar_menu .menu{
+    padding-right: 8px;
+
+}
+
+.sidebar_menu .social_media{
+    width: 100%;
+    position:absolute;
+    color: white;
+    bottom: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+    
+}
+
+.sidebar_menu .social_media ul{
+    color: red;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    gap: 10px;
+    margin: auto;
+}
+
+
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 6px rgb(255, 255, 255);
+
+}
+
+.btn_one i:hover{
+    font-size: 35px;
+    filter:drop-shadow(2px 1px 2.5px  white);
+   
+}
+
+
+.sidebar_menu .btn_two i:hover{
+    filter:drop-shadow(2px 1px 2.5px  white);
+    font-size: 35px;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .sidebar_menu{
+    position: absolute;
+    left: 0;
+
+} 
+#check:checked~.btn_one i{
+    opacity: 0;
+}
+
+#check:checked~.sidebar_menu .btn_one i{
+    opacity: 1;
+}
