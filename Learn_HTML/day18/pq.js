@@ -48,3 +48,21 @@ function con(str){
 }
 
 con(str)
+
+// Guess the output:
+let greet="Hello";
+function changeGreet(){
+        let greet ="namaste";
+        console.log(greet);  //namaste
+        function innerGreet(){
+        console.log(greet);//namaste
+        }
+}
+console.log(greet); //hello
+changeGreet();
+
+let sum=function(a,b){
+    return a*b;
+}
+
+console.log(sum(5,2));
