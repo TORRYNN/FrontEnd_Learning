@@ -1,5 +1,5 @@
 // Selecting Element.
-let a=document.getElementById("#do");
+let a= document.getElementById("#do");
 // Querry Selector
 
 // innertext: Shows the only the visible text.
@@ -13,3 +13,10 @@ let a=document.getElementById("#do");
 a.getAttribute("p");
 
 a.setAttribute("p", "text");
+
+
+// Inseting element in Document
+
+let newP=document.createElement("p");
+newP.innerText="Hi, I am a new p";
+console.dir(newP);
