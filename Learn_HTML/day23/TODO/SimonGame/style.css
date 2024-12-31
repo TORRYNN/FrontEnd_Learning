@@ -1,0 +1,221 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+}
+h1{
+	padding: 1rem 1rem;
+}
+h3 {
+	padding: .5rem 1rem;  
+}
+
+#main {   
+    position: relative;
+    width: 100%;  
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: transparent; /* Fallback color */
+    
+    overflow: hidden; /* Ensures no blur overflow outside the container */
+}
+
+#main::before {
+    background-color: rgba(189, 14, 14, 0.5); /* Debugging */
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/008/570/594/small_2x/psychedelic-swirl-groovy-pattern-psychedelic-retro-wave-wallpaper-liquid-groovy-background-design-illustration-free-vector.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Applies blur only to the background */
+    z-index: -1; /* Places it behind the content */
+}
+
+
+#mobile {
+    min-width:23.75rem ;
+	width: fit-content;
+	max-width: 400px;
+	height: fit-content;     
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	border: 8px solid black;
+	border-radius: 30px;
+    background-color: #F8D8A6;
+	overflow: hidden;
+}
+
+
+#bar {
+	width: 7.5rem;
+	height: 20px;
+	background-color: black;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+#cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.btn-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+    padding: 2rem;
+	height: fit-content;
+	/* background-color: red; */
+	flex-direction: row;
+}
+#up{
+	display: flex;
+	gap: 2rem;
+
+}
+#dwn{
+	display: flex;
+	gap: 2rem;
+
+}
+.btn {
+	width:8rem;
+	height: 8rem;
+	background-color: red;
+	border-radius: 25px;
+	border: 0.5rem solid black;
+    cursor: pointer;
+	 position: relative;
+    z-index: 5; 
+}
+
+
+#one {
+    background-color: #fcb424;
+}
+#two {
+	background-color: #ea4b8b;
+}
+#three {
+	background-color: #63c5ea;
+}
+#four {
+	background-color: #7B56AA;
+}
+
+
+.flash{
+    background-color: white !important;
+}
+
+button:hover{
+    background-color: #3bffc1 !important;
+
+}
+.user-flash{
+    background-color: #00ff08 !important;
+
+}
+
+.wrong-click{
+    background-color: rgb(255, 17, 0) !important;
+}
+
+
+.help-button{
+	padding: .625rem 1.25rem;
+	background-color:#44ea4a;
+	color:black ;
+	font-style: bold;
+	border:none;
+	cursor: pointer;
+	font-size: 1.2rem;
+	border-radius: .5rem;
+	position: fixed;
+	bottom: 1.25rem;
+	right: 1.25rem;
+}
+
+/* Hover effect for the help button */
+.help-button:hover {
+    background-color: #ffffff !important;
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 9;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0,0, .4);
+
+}
+
+.modal-content{
+	background-color: white ;
+	margin: 15% auto;
+	padding: 2rem;
+	border: 1px solid #888;
+	width: 90%;
+	max-width: 600px;
+	border-radius: 8px;
+	
+}
+
+.modal-content ol li{
+	text-align:justify;
+}
+
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Close button hover */
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 767.98px){
+	html{
+		font-size: 14px;
+	}
+}
