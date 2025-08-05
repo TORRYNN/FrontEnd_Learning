@@ -1,0 +1,96 @@
+:root {
+	--base-font: 16px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif; /* Add a fallback */
+	color: white;
+}
+
+html {
+	font-size: var(--base-font);
+	scroll-behavior: smooth;
+	height: 100%;
+	width: 100%;
+    background-color: black;
+ 
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+	padding: 0 2rem;
+	overflow-x: hidden;
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    gap: 3rem;
+	list-style: none;
+}
+li {
+	text-wrap: wrap;
+}
+
+#main{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#nav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+#tline {
+	width: 250px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 8rem;
+	text-align: center;
+	font-weight: normal;
+    line-height: 7.9rem;
+    position: relative;
+    z-index: 999;
+    
+}
+
+#one{
+    text-align: left;
+    margin-top: 6rem;
+    padding-left: 3rem;
+}
+
+img{
+    position: absolute;
+    height: 400px;
+    top: 12%;
+    left: 40%;
+}
+
+#img1{
+    rotate: 20deg;
+}
+#img2{
+    rotate:10deg;
+}
+#img3{
+    rotate: 0deg;
+}
+
+#footer{
+    margin-top: 2rem;
+}

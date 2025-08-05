@@ -1,0 +1,49 @@
+:root {
+	--base-font: 16px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif; /* Add a fallback */
+	color: black;
+}
+
+html {
+	font-size: var(--base-font);
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: .5rem;
+    display: none;
+}
+#container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#bar {
+	width: 300px;
+	height: 10px;
+	background-color: #dadada;
+	border-radius: 20px;
+}
+
+#progress {
+	height: 100%;
+	background-color: rgb(17, 255, 0);
+	border-radius: 20px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
