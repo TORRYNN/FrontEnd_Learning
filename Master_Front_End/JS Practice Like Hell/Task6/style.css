@@ -1,0 +1,62 @@
+:root {
+    --base-font: 16px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif; /* Add a fallback */
+    color:black;
+}
+
+html {
+    font-size: var(--base-font);
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+nav{
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    list-style-type: none;
+    
+}
+
+li{
+    background-color: lavenderblush;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* h3{
+    font-size: 2px;
+} */
+
+
+#abouttext{
+    background-color: lightblue;
+}
+
+#careertext{
+    background-color: lightcoral;
+}
+
+#hometext{
+    background-color: lightgreen;
+}

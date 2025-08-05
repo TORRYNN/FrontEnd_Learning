@@ -1,0 +1,53 @@
+:root {
+	--base-font: 16px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif; /* Add a fallback */
+	color: black;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	font-size: var(--base-font);
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#page1 {
+	width: 100%;
+	height: 100%;
+	background-color: lightblue;
+}
+#page2 {
+	width: 100%;
+	height: 100%;
+	background-color: lightcoral;
+}
+
+#page2 img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#page3 {
+	width: 100%;
+	height: 100%;
+	background-color: lightyellow;
+}

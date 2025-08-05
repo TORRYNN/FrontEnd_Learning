@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+		<html lang="en">
+			<head>
+				<meta charset="UTF-8" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+				<title>Task 9</title>
+				<style>
+                    html{
+                        width: 100%;
+                        padding: 30px;
+                    }
+					textarea {
+						width: 400px;
+						height: 100px;
+						padding: 10px;
+						font-size: 16px;
+						border: 2px solid #ccc;
+						border-radius: 5px;
+						resize: none;
+					}
+					.warning {
+						color: red;
+						font-weight: bold;
+					}
+				</style>
+			</head>
+			<body>
+				<!-- Build a character counter for a text area or input field, which updates in real time as user types and enforces a character limit. -->
+
+				<h3>Counter: <span id="num">0</span></h3>
+				<textarea
+					id="text"
+					placeholder="Type here..."
+					maxlength="100"
+				></textarea>
+
+				<script>
+					var textarea = document.getElementById("text");
+					var counter = document.getElementById("num");
+					var maxLimit = 100;
+
+					textarea.addEventListener("input", function () {
+						var currentLength = textarea.value.length;
+						counter.textContent = currentLength + "/" + maxLimit;
+
+						// Add warning color if close to the limit
+						if (currentLength > maxLimit - 10) {
+							counter.classList.add("warning");
+						} else {
+							counter.classList.remove("warning");
+						}
+					});
+				</script>
+			</body>
+		</html>
+	</body>
+</html>

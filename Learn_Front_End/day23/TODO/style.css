@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat ;
+
+}
+
+html,body{
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+
+    width: 450px;
+    height: 100%;
+    background-color: lightcoral;
+    padding: 2rem;
+    border: 20px solid skyblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: auto;
+    
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{ 
+    
+    text-align: center;
+    font-size: 2rem;
+    color: #333; /* Darker text for better contrast */
+}
+
+button{
+    width: fit-content;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    background-color: greenyellow;
+    border: 3px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+        
+}
+button:hover {
+    background-color: black; /* Darker green on hover */
+    transform: scale(1.05);
+    color: greenyellow; 
+    border: 3px solid greenyellow;
+}
+
+.del{
+    width: fit-content;
+    background-color:rgb(248, 49, 49);
+}
+span {
+    padding: 1rem;
+    width: fit-content;
+    height: 50px;
+    border: 3px solid black;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+     border-bottom-right-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+    
+}
+
+.cont{
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+button:hover {
+    background-color: black; /* Darker green on hover */
+    transform: scale(1.05);
+    color: red; 
+    border: 3px solid red;
+}
+
+input{
+     width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.5s ease;
+    border: 6px solid rgb(255, 255, 255) ;
+
+}
+
+input:focus {
+    border: 6px solid  #87ceeb ;
+
+}
+input:invalid {
+      border-color: red; /* Highlight input with red */
+}
+input:valid {
+      border-color: rgb(5, 255, 34); /* Highlight input with red */
+}
+
+ul{
+    width: 100%;
+    background-color: lightpink;
+    justify-self: first start;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+    font-weight: 600;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+ul li {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1); /* Individual task shadow */
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li:hover {
+    background-color: #b2dbff; /* Slight blue on hover */
+    transform: translateY(-2px); /* Slight lift for interactivity */
+}
+
+#ulcontainer{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}

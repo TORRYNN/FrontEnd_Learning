@@ -1,0 +1,43 @@
+:root {
+    --base-font: 16px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif; /* Add a fallback */
+    color:black;
+}
+
+html {
+    font-size: var(--base-font);
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#box1{
+    width: 100px;
+    height: 100px;
+    
+    background-color: red;
+}
+#box2{
+    width:100px;
+    height: 100px;
+    
+    background-color: royalblue;
+}
+#box3{
+    width: 100px;
+    height: 100px;
+    
+    background-color: lightseagreen;
+}

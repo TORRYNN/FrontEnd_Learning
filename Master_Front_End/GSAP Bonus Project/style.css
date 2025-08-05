@@ -1,0 +1,65 @@
+@font-face {
+	font-family: PPWoodland;
+	src: url("./PPWoodland-Regular.woff2");
+}
+:root {
+	--base-font: 16px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "PPWoodland", sans-serif; /* Add a fallback */
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	font-size: var(--base-font);
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#page1 {
+	width: 100%;
+	height: 100vh;
+	background-color: #e3e3c4;
+}
+#page2 {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #556043;
+	padding: 4vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	& h1 {
+		font-weight: 400;
+		text-align: center;
+		font-size: 5vw;
+		line-height: 5.2vw;
+		color: #434b34;
+
+		& span {
+
+		}
+	}
+}
+
+
+#page3 {
+	width: 100%;
+	height: 100vh;
+	background-color: #e3e3c4;
+}

@@ -1,0 +1,42 @@
+:root {
+    --base-font: 16px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif; /* Add a fallback */
+    color:black;
+}
+
+html {
+    font-size: var(--base-font);
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;justify-content: center;
+    flex-direction: column;
+}
+
+#two{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+hr{
+    width: 100%;
+}
+#two img{
+    width: 100%;
+}

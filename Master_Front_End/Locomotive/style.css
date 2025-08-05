@@ -1,0 +1,59 @@
+:root {
+	--base-font: 16px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif; /* Add a fallback */
+	color: black;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	font-size: var(--base-font);
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	
+}
+
+
+
+#page1 {
+	height: 100vh;
+	width: 100%;
+	background-color: lightblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#page2 {
+	height: 100vh;
+	width: 100%;
+	background-color: thistle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#page3 {
+	height: 100vh;
+	width: 100%;
+	background-color: lightcyan;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#box {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+}
